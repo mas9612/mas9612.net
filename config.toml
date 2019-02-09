@@ -1,6 +1,6 @@
 baseURL = "https://example.com"
-languageCode = "ja"
-defaultContentLanguage = "ja"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "mas9612's note"
 theme = "hermit"
 enableGitInfo = true
