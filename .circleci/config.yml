@@ -10,7 +10,12 @@ jobs:
 
       - run:
           name: Install hugo
-          command: go get -v github.com/gohugoio/hugo
+          command: |
+            cd /tmp
+            curl -LO https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
+            tar xzf hugo_0.54.0_Linux-64bit.tar.gz
+            sudo mv hugo /usr/local/bin
+            cd /go/src/github.com/mas9612/mas9612.net
 
       - run:
           name: build HTML
