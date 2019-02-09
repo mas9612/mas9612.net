@@ -1,0 +1,15 @@
+baseURL = "http://example.org/"
+languageCode = "ja"
+title = "mas9612's note"
+theme = "m10c"
+
+[params]
+  author = "Masato Yamazaki"
+  description = "Undergraduate student of Kansai University Graduate School of Informatics"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/mas9612"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/mas9612"
