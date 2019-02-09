@@ -1,7 +1,7 @@
 ---
 title: "OpenSSLでTLS証明書を作る"
 date: 2018-11-14T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 etcdクラスタをTLS有効にして運用するため，TLS証明書を作成する必要があった．

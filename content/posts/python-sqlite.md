@@ -1,7 +1,7 @@
 ---
 title: "Pythonでsqlite"
 date: 2016-05-12T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 Pythonでデータベースを使ってみたかったので，標準ライブラリに含まれているsqlite3モジュールを触ってみた．

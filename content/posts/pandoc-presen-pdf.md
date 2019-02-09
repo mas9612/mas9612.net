@@ -1,7 +1,7 @@
 ---
 title: "Pandocを使用してMarkdownからプレゼン用PDFを作成する"
 date: 2016-11-17T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 タイトルの通り．エディタで完結するならそっちのほうが良いので試してみた．

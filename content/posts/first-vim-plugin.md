@@ -1,7 +1,7 @@
 ---
 title: "はじめてのVimプラグインつくった"
 date: 2017-07-21T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 ## 作成した経緯

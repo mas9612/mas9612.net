@@ -1,7 +1,7 @@
 ---
 title: "GoでMySQLを使う - database/sql package"
 date: 2018-02-15T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 GoからMySQLを使う方法について調べた．

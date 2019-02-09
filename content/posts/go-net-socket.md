@@ -1,7 +1,7 @@
 ---
 title: "Go net package – Goでソケット通信"
 date: 2018-02-04T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 Goのnetパッケージについて軽く勉強した．

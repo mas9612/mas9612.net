@@ -1,7 +1,7 @@
 ---
 title: "pipeによるプロセス間通信"
 date: 2018-12-08T00:00:00+09:00
-draft: true
+draft: false
 ---
 
  `fork()` で作成した子プロセスと親プロセスの間で情報のやり取りをするために，IPC（Inter Process Communication）の一つであるパイプを利用した．

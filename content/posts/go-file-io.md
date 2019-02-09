@@ -1,7 +1,7 @@
 ---
 title: "GoでのファイルI/O"
 date: 2019-01-13T00:00:00+09:00
-draft: true
+draft: false
 ---
 
 GoでのファイルI/Oについて，改めてまとめた．
