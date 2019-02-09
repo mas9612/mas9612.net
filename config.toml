@@ -1,15 +1,65 @@
-baseURL = "http://example.org/"
+baseURL = "https://example.com"
 languageCode = "ja"
+defaultContentLanguage = "ja"
 title = "mas9612's note"
-theme = "m10c"
+theme = "hermit"
+enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+hasCJKLanguage = true
+rssLimit = 10
+enableEmoji = true
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "yourdiscussshortname"
+
+[author]
+  name = "Masato Yamazaki"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  category = ""  # Categories are disabled by default.
 
 [params]
-  author = "Masato Yamazaki"
-  description = "Undergraduate student of Kansai University Graduate School of Informatics"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
+
+  homeSubtitle = "About Programming, Computer, Gadget, Technology..."
+  # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # bgImg = ""  # Homepage background-image URL
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/username/repository/commit/"
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/mas9612"
 
   [[params.social]]
     name = "github"
     url = "https://github.com/mas9612"
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/mas9612"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "AboutMe"
+    url = "aboutme/"
+    weight = 20
