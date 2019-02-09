@@ -27,6 +27,7 @@ Keep-Aliveによるコネクション持続時間は， `KeepAliveTimeout` デ�
 ## Nginx
 ### Keep-Aliveの設定
 Nginxでは，Keep-AliveのOn/Offは `keepalive_timeout` の値によって決まる．
+
 * `keepalive_timeout` が `0` : Keep-Alive Off
 * `keepalive_timeout` が `0` 以外: Keep-Alive On
 

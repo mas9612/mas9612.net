@@ -14,6 +14,7 @@ To test and study Kubernetes authentication flow, I was tested it with minikube.
 
 ## Environment
 * Kubernetes cluster bootstrapped with minikube
+
 ```shell
 $ kubectl version
 Client Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.1", GitCommit:"eec55b9ba98609a46fee712359c7b5b365bdd920", GitTreeState:"clean", BuildDate:"2018-12-13T19:44:19Z", GoVersion:"go1.11.2", Compiler:"gc", Platform:"darwin/amd64"}

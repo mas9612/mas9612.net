@@ -27,6 +27,7 @@ OpenSSL 1.1.1  11 Sep 2018
 `genrsa` サブコマンドでもできるようだが，マニュアルに `genrsa` 含めいくつかのコマンドは `genpkey` に置き換えられたという記述があるので，今回は `genpkey` を使用する．
 
 今回は次のような鍵を作成する．
+
 * 公開鍵アルゴリズム: RSA
 * 鍵長: 2048bit
 * 秘密鍵を暗号化するためのアルゴリズム: AES 128bit
@@ -49,6 +50,7 @@ Verifying - Enter PEM pass phrase:
 ```
 
 オプションの意味は次の通り．
+
 * `-algorithm rsa` : 公開鍵アルゴリズムとしてRSAを使用する
 * `-pkeyopt rsa_keygen_bits:2048` : RSAの鍵長を2048bitにする
 * `-aes128` : 秘密鍵をAES 128bitで暗号化する
@@ -97,6 +99,7 @@ An optional company name []:.
 ```
 
 オプションの意味は次の通り．
+
 * `-new` : 新しいCSRを作成するときに指定する
 * `-key ca.key` : 秘密鍵を指定する．この鍵とペアになる公開鍵が署名される
 * `-out ca.csr` : `ca.csr` という名前でCSRを作成する
@@ -105,6 +108,7 @@ An optional company name []:.
 CSRが作成できたら，最後にTLS証明書を作成する．
 
 今回は，次の2種類の方法を試す．
+
 * 自己署名: 自分の秘密鍵を使って署名する
 * 別に用意したCAによる署名: CAの秘密鍵を使って署名する
 
@@ -127,6 +131,7 @@ Enter pass phrase for ca.key:
 ```
 
 オプションの意味は次の通り．
+
 * `-req` : このオプションを指定すると，CSRを読み込んでTLS証明書を作成する
 * `-in ca.csr` : 読み込むCSRファイルを指定
 * `-out ca.crt` : `ca.crt` という名前でTLS証明書を出力する
@@ -163,6 +168,7 @@ Enter pass phrase for ca.key:
 ```
 
 CA関連のオプションは次の通り．
+
 * `-CA ca.crt` : 署名に使用するCAのTLS証明書を指定する
 * `-CAkey ca.key` : 署名に使用するCA秘密鍵を指定する
 * `-CAcreateserial` : CAのシリアルナンバーファイルが存在しない場合，自動で作成する
@@ -240,6 +246,7 @@ m9ZFXwYPhq+ORWBJE9+hL1PsgvkiruEECIKTE2Pfeb8TkiO1Gls=
 ```
 
 いろいろ出力されるが，NやEに対応するのは次の部分．
+
 * N: modulus
 * E: publicExponent
 * D: privateExponent
