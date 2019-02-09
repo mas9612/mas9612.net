@@ -9,7 +9,7 @@ pygmentsUseClasses  = true
 hasCJKLanguage = true
 rssLimit = 10
 enableEmoji = true
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-134133452-1"
 # disqusShortname = "yourdiscussshortname"
 
 [author]
