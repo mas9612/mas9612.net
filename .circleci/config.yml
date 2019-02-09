@@ -37,16 +37,12 @@ jobs:
 
       - run:
           name: Clone mas9612.github.io
-          command: git clone git@github.com:mas9612/mas9612.github.io.git /go/src/mas9612.github.io
+          command: git clone git@github.com:mas9612/mas9612.github.io.git ~/mas9612.github.io
 
       - run:
           name: Copy HTML to mas9612.github.io
-          command: cp -r ./public/* /go/src/mas9612.github.io/
+          command: cp -r ./public/* ~/mas9612.github.io/
 
       - run:
           name: Commit & Deploy
-          command: |
-            cd /go/src/mas9612.github.io
-            git add .
-            git commit -m "deployed at $(TZ=Asia/Tokyo date +%Y-%m-%dT%T+09:00) from CircleCI"
-            git push origin master
+          command: ./deploy.sh
