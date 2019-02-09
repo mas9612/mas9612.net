@@ -9,6 +9,10 @@ jobs:
       - checkout
 
       - run:
+          name: Update submodule (Hugo theme)
+          command: git submodule update --init --recursive
+
+      - run:
           name: Install hugo
           command: |
             cd /tmp
