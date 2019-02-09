@@ -21,6 +21,16 @@ jobs:
           name: build HTML
           command: hugo
 
+      - add_ssh_keys:
+          fingerprints:
+            - "dd:5e:16:e4:9e:d9:fa:f1:be:44:bf:47:8f:43:fa:bb"
+
+      - run:
+          name: Set Git config
+          command: |
+            git config --global user.name "mas9612"
+            git config --global user.email "mas9612@gmail.com"
+
       - run:
           name: Clone mas9612.github.io
           command: git clone git@github.com:mas9612/mas9612.github.io.git /go/src/mas9612.github.io
@@ -33,5 +43,6 @@ jobs:
           name: Commit & Deploy
           command: |
             cd /go/src/mas9612.github.io
-            git commit -m "$(TZ=Asia/Tokyo date "deploy at +%Y%m%dT%T+09:00 from CircleCI")"
+            git add .
+            git commit -m "deployed at $(TZ=Asia/Tokyo date +%Y-%m-%dT%T+09:00) from CircleCI"
             git push origin master
