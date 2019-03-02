@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.9
+        environment:
+          TZ: Asia/Tokyo
 
     working_directory: /go/src/github.com/mas9612/mas9612.net
     steps:
@@ -32,7 +34,7 @@ jobs:
       - run:
           name: Set Git config
           command: |
-            git config --global user.name "mas9612"
+            git config --global user.name "Masato Yamazaki"
             git config --global user.email "mas9612@gmail.com"
 
       - run:
