@@ -2,7 +2,7 @@ baseURL = "https://www.mas9612.net/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "mas9612's note"
-theme = "hermit"
+theme = "hugo-future-imperfect"
 enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
@@ -10,56 +10,97 @@ hasCJKLanguage = true
 rssLimit = 10
 enableEmoji = true
 googleAnalytics = "UA-134133452-1"
-# disqusShortname = "yourdiscussshortname"
+preserveTaxonomyNames = true
+paginate = 3
+disqusShortname = "mas9612s-note"
+pluralizeListTitles = false
+enableRobotsTXT = true
+canonifyURLs = true
+
+[permalinks]
+  post = "/posts/:title/"
 
 [author]
   name = "Masato Yamazaki"
 
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  category = ""  # Categories are disabled by default.
-
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  description          = "About Programming, Computer, Technology..."
+  navbarTitle          = "mas9612's note"
+  viewMorePostLink     = "/posts/"
 
-  # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
+  rssAppearAtTop       = true
+# rssAppearAtBottom    = true
+  socialAppearAtTop    = true
+# socialAppearAtBottom = true
 
-  homeSubtitle = "About Programming, Computer, Gadget, Technology..."
-  # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
+  categoriesByCount    = true
+  showSidebarCategories = true
+  includeReadingTime   = true
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
+  loadFavicon          = false
+  socialShare          = true
+  socialShareTwitter   = true
+  socialShareFacebook  = true
+  socialShareEmail     = true
 
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  justifyContent = false  # Set "text-align: justify" to .content.
+  disable_highlight = false
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml", "css"]
+  highlightjsTheme = "github"
+  MathJaxCDN = "//cdn.bootcss.com"
+  MathJaxVersion = "2.7.1"
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/mas9612"
+[params.intro]
+  header    = "mas9612's note"
+  paragraph = "About Programming, Computer, Technology..."
+  # about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
 
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/mas9612"
+  # [params.intro.pic]
+  #   src       = "/img/main/logo.jpg"
+  #   # Sets Image to be a cirlce
+  #   circle    = false
+  #   # Sets Image to be Future Imperfect's hexagon
+  #   imperfect = true
+  #   width     = ""
+  #   alt       = "Hugo Future Imperfect"
 
-[menu]
-#   [[menu.main]]
-#     name = "AboutMe"
-#     url = "aboutme/"
-#     weight = 10
+[params.postAmount]
+    sidebar = 5
 
-  [[menu.main]]
-    name = "Blog"
-    url = "posts/"
-    weight = 20
+# Sets the menu items in the navigation bar
+# Identifier prepends a Font Awesome icon to the menu item
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  identifier = "fa fa-home"
+  weight = 1
+
+# [[menu.main]]
+#   name = "About"
+#   url = "/about/"
+#   identifier = "fa fa-id-card-o"
+#   weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  identifier = "fa fa-newspaper-o"
+  weight = 3
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  identifier = "fa fa-sitemap"
+  weight = 5
+
+# [[menu.main]]
+#   name = "Contact"
+#   url = "/contact/"
+#   identifier = "fa fa-envelope-o"
+#   weight = 6
+
+[social]
+  github           = "mas9612"
+  twitter          = "mas9612"
+  email            = "mas9612@gmail.com"
