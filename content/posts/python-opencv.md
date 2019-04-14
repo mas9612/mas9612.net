@@ -2,6 +2,7 @@
 title: "Python3にOpenCVをインストールした"
 date: 2016-06-22T00:00:00+09:00
 draft: false
+type: post
 ---
 
 環境はOS X Yosemite 10.10.5．

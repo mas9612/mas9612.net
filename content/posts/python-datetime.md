@@ -2,6 +2,7 @@
 title: "Pythonで日付を使う"
 date: 2016-05-06T00:00:00+09:00
 draft: false
+type: post
 ---
 
 Pythonのdatetimeモジュールについて少し勉強した．

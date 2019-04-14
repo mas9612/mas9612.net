@@ -2,6 +2,7 @@
 title: "etcd入門"
 date: 2018-10-27T00:00:00+09:00
 draft: false
+type: post
 ---
 
 Kubernetesにも採用されている分散型KVSについて，何回かに分けて勉強していく．

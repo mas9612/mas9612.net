@@ -2,6 +2,7 @@
 title: "chrootの基礎"
 date: 2019-02-12T00:40:00+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

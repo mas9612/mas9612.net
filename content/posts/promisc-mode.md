@@ -2,6 +2,7 @@
 title: "プロミスキャスモード（Promiscuous Mode）"
 date: 2019-03-23T22:18:44+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

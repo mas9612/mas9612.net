@@ -2,6 +2,7 @@
 title: "HTTP Keep-Aliveについて"
 date: 2018-07-05T00:00:00+09:00
 draft: false
+type: post
 ---
 
 HTTP Keep-Aliveについて調査した．

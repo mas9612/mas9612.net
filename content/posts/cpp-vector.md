@@ -2,6 +2,7 @@
 title: "C++のstd::vectorについて"
 date: 2016-07-24T00:00:00+09:00
 draft: false
+type: post
 ---
 
 std::vectorについて勉強しなおした．

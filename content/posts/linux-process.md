@@ -2,6 +2,7 @@
 title: "Linuxのプロセスについて"
 date: 2019-04-13T22:38:11+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

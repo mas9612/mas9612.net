@@ -2,6 +2,7 @@
 title: "Linux PAMについて"
 date: 2019-03-02T23:13:05+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

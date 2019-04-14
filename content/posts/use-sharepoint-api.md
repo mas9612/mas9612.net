@@ -2,6 +2,7 @@
 title: "SharePoint REST APIを使ってみた"
 date: 2017-03-09T00:00:00+09:00
 draft: true
+type: post
 ---
 
 SharePoint OnlineでサイトにアップロードしているExcelファイルを毎日自動でダウンロードしたいという要望をもらったので，

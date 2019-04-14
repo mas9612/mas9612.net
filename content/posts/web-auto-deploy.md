@@ -2,6 +2,7 @@
 title: "HTML等をGitHubへpushした時にWebサーバへ自動でデプロイする"
 date: 2017-10-21T00:00:00+09:00
 draft: false
+type: post
 ---
 
 HTMLなどの静的サイトをGitHubで管理していると，それを毎回手動でWebサーバへ反映させるのが面倒になってくる．

@@ -2,6 +2,7 @@
 title: "GoのType AssertionとType Switches"
 date: 2018-10-02T00:00:00+09:00
 draft: false
+type: post
 ---
 
 Goでは，型を `interface{}` として宣言してあげることで，とりあえずどんな値でも格納することが出来る．

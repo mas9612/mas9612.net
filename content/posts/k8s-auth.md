@@ -2,6 +2,7 @@
 title: "Kubernetes Authentication"
 date: 2019-01-13T00:00:00+09:00
 draft: false
+type: post
 ---
 
 When we use Kubernetes API, the request is checked by following order after TLS is established[1].

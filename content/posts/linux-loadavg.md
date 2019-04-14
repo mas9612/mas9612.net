@@ -2,6 +2,7 @@
 title: "Linuxのロードアベレージについて"
 date: 2019-04-02T22:26:20+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

@@ -2,6 +2,7 @@
 title: "RyuによるOpenFlow入門 (2)"
 date: 2018-06-24T00:00:00+09:00
 draft: false
+type: post
 ---
 
 前回の続き．今回はMACアドレス学習機能のある，スイッチングハブを作成する．

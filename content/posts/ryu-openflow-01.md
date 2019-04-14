@@ -2,6 +2,7 @@
 title: "RyuによるOpenFlow入門 (1)"
 date: 2018-06-10T00:00:00+09:00
 draft: false
+type: post
 ---
 
 Ryuを使って簡単なL2スイッチを作ってみた．

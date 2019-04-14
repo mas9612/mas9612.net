@@ -2,6 +2,7 @@
 title: "SECCON Beginners CTF 2018に参加した"
 date: 2018-05-27T00:00:00+09:00
 draft: false
+type: post
 ---
 
 SECCON Beginners CTF 2018に個人で参加した．

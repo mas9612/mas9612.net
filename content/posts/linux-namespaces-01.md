@@ -2,6 +2,7 @@
 title: "Linux Namespaces (1)"
 date: 2019-02-18T23:24:23+09:00
 draft: false
+type: post
 toc: true
 images:
 tags: 

@@ -2,6 +2,7 @@
 title: "DEFCON 2018 Write Up"
 date: 2018-05-17T00:00:00+09:00
 draft: true
+type: post
 ---
 
 Welcome問1つだけしか解けなかった．
