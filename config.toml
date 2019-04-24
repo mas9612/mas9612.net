@@ -70,11 +70,11 @@ canonifyURLs = true
   identifier = "fa fa-home"
   weight = 1
 
-# [[menu.main]]
-#   name = "About"
-#   url = "/about/"
-#   identifier = "fa fa-id-card-o"
-#   weight = 2
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  identifier = "fa fa-id-card-o"
+  weight = 2
 
 [[menu.main]]
   name = "Blog"
