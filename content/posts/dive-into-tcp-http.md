@@ -10,18 +10,6 @@ tags:
  - tcp
 ---
 
-<style>
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-img.small {
-  width: 100%;
-  max-width: 350px !important;
-}
-</style>
-
 TCPのコネクションが確立されてからクローズされるまでどのような流れで進んでいくのか，実際にパケットキャプチャをして確認した．
 ここではHTTPサーバへGETリクエストを送ったときのトラフィックを対象としている．
 
@@ -32,7 +20,7 @@ TCPのコネクションが確立されてからクローズされるまでど�
 ## サンプルのWebサーバを準備する
 Goを使って検証用にWebサーバを作成する．GETでHTTPリクエストを投げると `Hello world` と返すだけのWebサーバを作成した．ソースコードは次の通り．
 
-<script src="https://gist.github.com/mas9612/edfc7b6efa28d9002e282070ecd5e4e6.js"></script>
+{{< gist mas9612 edfc7b6efa28d9002e282070ecd5e4e6 >}}
 
 これを `main.go` として保存してサーバを実行しておく．
 ```sh
@@ -81,7 +69,7 @@ Hello world
 TCPでは，データの送受信に先立ちまず3-way handshakeと呼ばれるやり取りを行いTCPコネクションを確立する必要がある．
 3-way handshakeは次のような手順で行われる．
 
-<img src="/images/tcp-3-way-handshake.png" class="small" alt="TCP 3-way handshake">
+{{< figure src="/images/tcp-3-way-handshake.png" alt="TCP 3-way handshake" class="img-small" >}}
 
 1. クライアント（データ送信側）がサーバ（受信側）にSYNパケット（SYNフラグがセットされたパケット）を送信する
 1. クライアントからのSYNパケットを受信したサーバは，クライアントにSYN/ACKパケット（SYN・ACKの2つのフラグがセットされたパケット）を送り返す
@@ -110,7 +98,7 @@ RFC 793[^1] 1.5節によると，このTCP Window UpdateはACKパケットに通
 
 Window Scaleオプションは次のような形式となっている．
 
-<img src="/images/tcp-window-scale-option.png" class="small" alt="TCP Window Scale Option">
+{{< figure src="/images/tcp-window-scale-option.png" alt="TCP Window Scale Option" class="img-small" >}}
 
 このオプションが有効になっている場合は，TCPヘッダに格納されているウィンドウサイズを `shift.cnt` 分だけビットシフトした値が実際のウィンドウサイズとなる．
 これにより，16bitで表せる最大の65535よりも大きな値をウィンドウサイズとして指定できるようになる．
@@ -148,7 +136,7 @@ HTTPリクエストがサーバで受け取れたことをクライアントに�
 
 （クライアントからクローズ処理を開始すると仮定する）
 
-<img src="/images/tcp-connection-close.png" class="small" alt="TCP Connection Close">
+{{< figure src="/images/tcp-connection-close.png" alt="TCP Connection Close" class="img-small" >}}
 
 1. クライアントがサーバにFINパケットを送信する
 1. サーバがクライアントに対してACKパケットを送信し，FINパケットの受信応答を行う
