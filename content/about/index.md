@@ -4,22 +4,11 @@ draft: false
 type: about
 ---
 
-<style>
-li ul {
-    margin: 0 0 !important;
-}
-</style>
-
 ## Masato Yamazaki
 Student of Kansai University Graduate School of Informatics.
 Study computer science in University, especially computer networking, SDN (Software Defined Networking).
 
 I'm interested in infrastructure, SRE (Site Reliability Engineering) and computer networking.
-
-I used to try to understand the things more detailed, one example is network protocol.
-To understand the network protocol more and more, I'm developing small implementation of some network protocol with Linux RAW socket to handle ethernet frame in [mas9612/nwspekaer](https://github.com/mas9612/nwspeaker) repo.
-
-Various study log is in [mas9612/study](https://github.com/mas9612/study) repo or my [Blog](https://www.mas9612.net/).
 
 ## Experience
 ### Programming Language
@@ -57,12 +46,11 @@ Various study log is in [mas9612/study](https://github.com/mas9612/study) repo o
 * Mercari, Inc.
     - Develop new CLI tool to enhance microservice deployment process
 * Cybozu, Inc.
-    - Develop CKE (Cybozu Kubernetes Engine)
+    - Develop [CKE (Cybozu Kubernetes Engine)](https://github.com/cybozu-go/cke)
 * Recruit Holdings Co., Ltd.
     - Develop AWS monitoring tools with Grafana, Prometheus, cAdvisor.
     - Automate its deployment with Terraform
 
 ## Contact
-* [GitHub](https://github.com/mas9612)
 * [Twitter](https://twitter.com/mas9612)
-* [Facebook](https://www.facebook.com/mas9612)
+* [GitHub](https://github.com/mas9612)

@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "mas9612's note"
 theme = "hermit"
-enableGitInfo = true
+# enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 hasCJKLanguage = true
@@ -22,7 +22,7 @@ googleAnalytics = "UA-134133452-1"
 
 [taxonomies]
   tag = "tags"
-  category = ""  # Categories are disabled by default.
+  # category = ""  # Categories are disabled by default.
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -35,7 +35,7 @@ googleAnalytics = "UA-134133452-1"
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "About Programming, Computer, Gadget, Technology..."
+  homeSubtitle = ""
   # footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""  # Homepage background-image URL
 
@@ -44,6 +44,8 @@ googleAnalytics = "UA-134133452-1"
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
+
+  customCSS = ["css/custom.css"]
 
   [[params.social]]
     name = "twitter"
@@ -54,10 +56,10 @@ googleAnalytics = "UA-134133452-1"
     url = "https://github.com/mas9612"
 
 [menu]
-#   [[menu.main]]
-#     name = "AboutMe"
-#     url = "aboutme/"
-#     weight = 10
+  [[menu.main]]
+    name = "About Me"
+    url = "about/"
+    weight = 10
 
   [[menu.main]]
     name = "Blog"
