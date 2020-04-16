@@ -5,10 +5,8 @@ type: about
 ---
 
 ## Masato Yamazaki
-Student of Kansai University Graduate School of Informatics.
-Study computer science in University, especially computer networking, SDN (Software Defined Networking).
-
-I'm interested in infrastructure, SRE (Site Reliability Engineering) and computer networking.
+I'm a software engineer in Tokyo.
+I'm interested in infrastructure and networking, especially SRE (Site Reliability Engineering) and container-related technologies.
 
 ## Experience
 ### Programming Language
